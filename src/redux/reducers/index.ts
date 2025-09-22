@@ -5,6 +5,7 @@ import counterReducer from "../../components/bai3/Counter";
 import randomReducer from "../../components/bai4/RandomNumber";
 import changeState from "../../components/bai5/ChangeState";
 import changeTheme from "../../components/bai6/changeTheme";
+import authReducer from "../../components/bai7/Auth.reducer";
 
 const rootReducer = combineReducers({
   user: userReducer,
@@ -13,6 +14,7 @@ const rootReducer = combineReducers({
   random: randomReducer,
   changeState: changeState,
   changeTheme: changeTheme,
+  auth: authReducer,
 });
 export type RootState = ReturnType<typeof rootReducer>;
 export default rootReducer;
